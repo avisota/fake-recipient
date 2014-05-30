@@ -27,8 +27,7 @@
 	},
 	"autoload":{
 		"psr-0":{
-			"Avisota\\Recipient\\Fake": "src/",
-			"Avisota\\Recipient\\Fake\\Test": "test/"
+			"Avisota\\Recipient\\Fake": "src/"
 		}
 	},
 	"extra": {
