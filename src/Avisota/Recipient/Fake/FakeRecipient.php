@@ -44,8 +44,11 @@ class FakeRecipient extends MutableRecipient
     protected $data = null;
 
     /**
-     * @param       $email
-     * @param array $details
+     * @param null $locale
+     * @param null $seed
+     *
+     * @internal param $email
+     * @internal param array $details
      */
     public function __construct($locale = null, $seed = null)
     {
