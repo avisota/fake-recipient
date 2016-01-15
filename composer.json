@@ -1,39 +1,40 @@
 {
-	"name":"avisota/recipient-fake",
-	"description":"Fake recipient for Avisota.",
-	"keywords":["avisota", "fake"],
-	"homepage":"http://avisota.org",
-	"license":"LGPL-3.0+",
-	"authors":[
-		{
-			"name":"Tristan Lins",
-			"email":"tristan.lins@bit3.de",
-			"homepage":"http://bit3.de",
-			"role":"Developer"
-		}
-	],
-	"support":{
-		"email":"info@bit3.de",
-		"issues":"https://github.com/bit3/contao-avisota/issues",
-		"forum":"https://community.contao.org/de/forumdisplay.php?121-Avisota",
-		"wiki":"http://avisota.org",
-		"irc":"irc://irc.freenode.org/avisota",
-		"source":"https://github.com/bit3/contao-avisota"
-	},
-	"require":{
-		"php":">=5.3",
-		"avisota/core": "~1.0",
-		"fzaninotto/faker": "~1.0"
-	},
-	"autoload":{
-		"psr-0":{
-			"Avisota\\Recipient\\Fake": "src/",
-			"Avisota\\Recipient\\Fake\\Test": "test/"
-		}
-	},
-	"extra": {
-		"branch-alias": {
-			"dev-develop": "1.0.x-dev"
-		}
-	}
+    "name": "avisota/recipient-fake",
+    "description": "Fake recipient for Avisota.",
+    "keywords": [
+        "avisota",
+        "fake"
+    ],
+    "homepage": "http://avisota.org",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Sven Baumann",
+            "email": "baumann.sv@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "support@avisota.org",
+        "issues": "https://github.com/bit3/contao-avisota/issues",
+        "forum": "https://community.contao.org/de/forumdisplay.php?121-Avisota",
+        "wiki": "http://avisota.org",
+        "irc": "irc://irc.freenode.org/avisota",
+        "source": "https://github.com/bit3/contao-avisota"
+    },
+    "require": {
+        "php": ">=5.3",
+        "avisota/core": "~1.0",
+        "fzaninotto/faker": "~1.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Avisota\\Recipient\\Fake": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "1.0.x-dev"
+        }
+    }
 }
