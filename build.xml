@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!--
+This is an example ant build file to be used in combination with composer.
+-->
+
+<project name="avisota-recipient-fake" default="build">
+    <import file="vendor/phpcq/phpcq/phpcq.main.xml"/>
+</project>
