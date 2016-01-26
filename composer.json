@@ -34,13 +34,13 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
-        "psr-0": {
+        "psr-4": {
             "Avisota\\Recipient\\Fake": "src/"
         }
     },
     "autoload-dev": {
-        "psr-0": {
-            "Avisota\\Test\\Recipient\\Fake": "tests/Test/"
+        "psr-4": {
+            "Avisota\\Test\\Recipient\\Fake\\": "tests/Test/"
         }
     },
     "extra": {
