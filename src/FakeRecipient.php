@@ -84,7 +84,9 @@ class FakeRecipient extends MutableRecipient
     }
 
     /**
-     * {@inheritdoc}
+     * Get the recipient email address.
+     *
+     * @return string
      */
     public function getEmail()
     {
@@ -93,7 +95,12 @@ class FakeRecipient extends MutableRecipient
     }
 
     /**
-     * {@inheritdoc}
+     * Set the email address.
+     *
+     * @param $email
+     *
+     * @return void
+     * @throws MutableRecipientDataException
      */
     public function setEmail($email)
     {
@@ -102,7 +109,9 @@ class FakeRecipient extends MutableRecipient
     }
 
     /**
-     * {@inheritdoc}
+     * Check if this recipient has personal data.
+     *
+     * @return bool
      */
     public function hasDetails()
     {
@@ -110,7 +119,12 @@ class FakeRecipient extends MutableRecipient
     }
 
     /**
-     * {@inheritdoc}
+     * Get a single personal data field value.
+     * Return null if the field does not exists.
+     *
+     * @param string $name
+     *
+     * @return mixed
      */
     public function get($name)
     {
@@ -122,7 +136,13 @@ class FakeRecipient extends MutableRecipient
     }
 
     /**
-     * {@inheritdoc}
+     * Set a personal data field.
+     *
+     * @param string $name  The name of the field.
+     * @param mixed  $value The value of the field. A value of
+     *                      <code>null</code> delete the field.
+     *
+     * @return void
      */
     public function set($name, $value)
     {
@@ -131,7 +151,17 @@ class FakeRecipient extends MutableRecipient
     }
 
     /**
-     * {@inheritdoc}
+     * Get all personal data values as associative array.
+     *
+     * The personal data must have a key 'email', that contains the email address.
+     * <pre>
+     * array (
+     *     'email' => '...',
+     *     ...
+     * )
+     * </pre>
+     *
+     * @return array
      */
     public function getDetails()
     {
@@ -140,7 +170,11 @@ class FakeRecipient extends MutableRecipient
     }
 
     /**
-     * {@inheritdoc}
+     * Set multiple personal data fields.
+     *
+     * @param array $details
+     *
+     * @return void
      */
     public function setDetails(array $details)
     {
@@ -149,7 +183,17 @@ class FakeRecipient extends MutableRecipient
     }
 
     /**
-     * {@inheritdoc}
+     * Get all personal data keys.
+     *
+     * The keys must contain 'email'.
+     * <pre>
+     * array (
+     *     'email',
+     *     ...
+     * )
+     * </pre>
+     *
+     * @return array
      */
     public function getKeys()
     {

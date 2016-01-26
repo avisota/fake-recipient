@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit backupGlobals="false"
          backupStaticAttributes="false"
-         bootstrap="vendor/autoload.php"
          colors="true"
          convertErrorsToExceptions="true"
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
          processIsolation="false"
-         strict="true">
+         stopOnFailure="false"
+         syntaxCheck="false"
+         bootstrap="tests/bootstrap.php">
     <testsuites>
-        <testsuite name="AvisotaRecipientFakeTestSuite">
-            <directory suffix="Test.php">test/Avisota/Recipient/Fake/Test/</directory>
+        <testsuite name="Avisota recipient-fake">
+            <directory>tests/Test</directory>
         </testsuite>
     </testsuites>
 </phpunit>
