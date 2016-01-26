@@ -11,6 +11,7 @@
         {
             "name": "Sven Baumann",
             "email": "baumann.sv@gmail.com",
+            "homepage": "http://avisota.org",
             "role": "Developer"
         }
     ],
@@ -30,9 +31,16 @@
     "require-dev": {
         "phpcq/all-tasks": "~1.1"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-0": {
             "Avisota\\Recipient\\Fake": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "Avisota\\Test\\Recipient\\Fake": "tests/Test/"
         }
     },
     "extra": {
