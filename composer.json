@@ -35,7 +35,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Avisota\\Recipient\\Fake": "src/"
+            "Avisota\\Recipient\\Fake\\": "src/"
         }
     },
     "autoload-dev": {
