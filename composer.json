@@ -6,7 +6,7 @@
         "fake"
     ],
     "homepage": "http://avisota.org",
-    "license": "LGPL-3.0+",
+    "license": "LGPL-3.0-or-later",
     "authors": [
         {
             "name": "Sven Baumann",
@@ -21,18 +21,16 @@
         "forum": "https://community.contao.org/de/forumdisplay.php?121-Avisota",
         "wiki": "http://avisota.org",
         "irc": "irc://irc.freenode.org/avisota",
-        "source": "https://github.com/bit3/contao-avisota"
+        "source": "https://github.com/avisota/fake-recipient"
     },
     "require": {
-        "php": ">=5.3",
-        "avisota/core": "~1.0",
-        "fzaninotto/faker": "~1.0"
+        "php": "^5.6",
+        "avisota/core": "^1.0",
+        "fzaninotto/faker": "^1.0"
     },
     "require-dev": {
-        "phpcq/all-tasks": "~1.1"
+        "phpcq/all-tasks": "^1.1"
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "Avisota\\Recipient\\Fake\\": "src/"
@@ -45,7 +43,8 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-develop": "1.0.x-dev"
+            "dev-master": "1.2.x-dev",
+            "dev-develop": "1.3.x-dev"
         }
     }
 }
